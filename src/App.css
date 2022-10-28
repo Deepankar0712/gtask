@@ -1,38 +1,189 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-link{
+  font-weight: bold !important;
+  margin: 0 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.landing{
+  position: relative;
+  width: 100%;
+  height: 400px;
+  /* background: ; */
+  background: #40b1b5;
+  padding: 20px;
+}
+body{
+  height: 100vh;
+  background-color: #ededf3 !important;
+}
+.landing:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  transform: skewY(-4deg);
+  transform-origin:top right;
+  z-index: -1;
+}
+.nav-div{
+  background: white;
+  border-radius: 10px;
+}
+.butn{
+  background: linear-gradient(180deg, rgb(254 242 101) 0%, rgb(252 181 106) 60%);
+}
+.services{
+  position: absolute;
+  box-shadow: 4px 6px 4px rgb(175, 170, 170);
+}
+.service1{
+  top: 40%;
+  left: 25%;
+}
+.service2{
+  top: 75%;
+  left: 15%;
+}
+.service3{
+  top: 110%;
+  left: 25%;
+}
+.service4{
+  top: 40%;
+  left: 68%;
+}
+.service5{
+  top: 75%;
+  left: 78%;
+}
+.service6{
+  top: 110%;
+  left: 68%;
+}
+@media screen and (max-width: 1150px) {
+  .service1{
+    top: 40%;
+    left: 20%;
+  }
+  .service2{
+    top: 75%;
+    left: 10%;
+  }
+  .service3{
+    top: 110%;
+    left: 20%;
+  }
+  .service4{
+    top: 40%;
+    left: 69%;
+  }
+  .service5{
+    top: 75%;
+    left: 79%;
+  }
+  .service6{
+    top: 110%;
+    left: 70%;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 900px) {
+  .services img{
+    width: 16px !important;
+    height: 16px !important;
   }
-  to {
-    transform: rotate(360deg);
+  .services span{
+    font-size: 11px !important;
+  }
+  .landingBoy{
+    width: 300px !important;
+    height: 300px !important;
+  }
+  .service1{
+    top: 40%;
+    left: 15%;
+  }
+  .service2{
+    top: 65%;
+    left: 5%;
+  }
+  .service3{
+    top: 90%;
+    left: 20%;
+  }
+  .service4{
+    top: 40%;
+    left: 71%;
+  }
+  .service5{
+    top: 65%;
+    left: 81%;
+  }
+  .service6{
+    top: 90%;
+    left: 72%;
+  }
+}
+@media screen and (max-width: 530px) {
+  .services img{
+    width: 8px !important;
+    height: 8px !important;
+    margin-right: 2px !important;
+  }
+  .services{
+    padding: 5px 7px !important;
+  }
+  .services span{
+    font-size: 5px !important;
+  }
+  .landing{
+    height: 270px;
+  }
+  .service3{
+    width: 35px !important;
+    height: 35px !important;
+    padding: 5px 10px !important;
+  }
+  .landingBoy{
+    width: 250px !important;
+    height: 250px !important;
+  }
+  .service1{
+    top: 40%;
+    left: 15%;
+  }
+  .service2{
+    top: 75%;
+    left: 5%;
+  }
+  .service3{
+    top: 115%;
+    left: 15%;
+  }
+  .service4{
+    top: 40%;
+    left: 71%;
+  }
+  .service5{
+    top: 75%;
+    left: 81%;
+  }
+  .service6{
+    top: 115%;
+    left: 74%;
+  }
+  .landingContenth1{
+    font-size: 28px !important;
+    text-align: center;
+  }
+  .landingContentp{
+    text-align: center;
   }
 }
